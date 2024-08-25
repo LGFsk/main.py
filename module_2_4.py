@@ -5,9 +5,9 @@ is_prime = bool
 for i in range(len(numbers)):
     for j in range(2, 4):
         if (numbers[i] == 1):
-            y = len(primes)
+            is_prime = True
             break
-        elif (numbers[i] == 2 or numbers[i] == 3):
+        elif numbers[i] == 2 or numbers[i] == 3:
             is_prime = True
             break
         elif ((numbers[i] % j) == 0):
@@ -15,12 +15,12 @@ for i in range(len(numbers)):
             break
         else:
             is_prime = True
-
     if is_prime == True:
         primes.append(numbers[i])
     else:
         not_primes.append(numbers[i])
 
-primes.pop(y)
+for h in range(primes.count(1)):
+    primes.remove((1))
 print("Primes:", primes)
 print("Not Primes:", not_primes)
