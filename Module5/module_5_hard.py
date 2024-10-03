@@ -99,9 +99,10 @@ class User:
 ur = UrTube()
 v1 = Video('Лучший язык программирования 2024 года', 200)
 v2 = Video('Для чего девушкам парень программист?', 10, adult_mode=True)
-
+v3 = Video('Кто они лучшие программисты?', 25)
 # Добавление видео
 ur.add(v1, v2)
+ur.add(v3)
 
 # Проверка поиска
 print(ur.get_videos('лучший'))
@@ -113,7 +114,7 @@ ur.register('vasya_pupkin', 'lolkekcheburek', 13)
 ur.watch_video('Для чего девушкам парень программист?')
 ur.register('urban_pythonist', 'iScX4vIJClb9YQavjAgF', 25)
 ur.watch_video('Для чего девушкам парень программист?')
-ur.watch_video('Лучший язык программирования 2024 года')
+ur.watch_video('Кто они лучшие программисты?')
 
 # Проверка входа в другой аккаунт
 ur.register('vasya_pupkin', 'F8098FM8fjm9jmi', 55)
