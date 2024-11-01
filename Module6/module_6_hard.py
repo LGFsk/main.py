@@ -1,6 +1,3 @@
-import math
-
-
 class Figure():
     def __init__(self, color, sides):
         self.sides_count = 0
